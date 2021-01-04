@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import './App.css';
 import Header from './components/Header';
 import ReviewSelect from './components/ReviewSelect';
@@ -10,20 +12,33 @@ function onlyUnique(value, index, self) {
   return self.indexOf(value) === index;
 }
 
-const App = () => {
+function App() {
+  const [country, setCountry] = useState(reviews[0].country);
+
+  let countryReviews = reviews.filter((review) => {
+    return review.country === country;
+  });
   let countries = reviews.map((review) => review.country).filter(onlyUnique);
+
+  useEffect(() => {
+    countryReviews = reviews.filter((review) => {
+      return review.country === country;
+    });
+    countries = reviews.map((review) => review.country).filter(onlyUnique);
+  }, [country]);
 
   return (
     <div className='App'>
       <Header />
       <ReviewSelect
-        numReviews={reviews.length}
+        numReviews={countryReviews.length}
         countries={countries}
-        selected={reviews[0].country}
+        selected={country}
+        updateSelect={setCountry}
       />
-      <ReviewTable reviews={reviews} />
+      <ReviewTable reviews={countryReviews} />
     </div>
   );
-};
+}
 
 export default App;

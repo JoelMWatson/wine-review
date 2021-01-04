@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ReviewSelect = ({ numReviews, countries, selected }) => {
+const ReviewSelect = ({ numReviews, countries, selected, updateSelect }) => {
   const renderCountries = () => {
     return countries.map((country) => {
       return (
@@ -20,7 +20,11 @@ const ReviewSelect = ({ numReviews, countries, selected }) => {
       </div>
       <div>
         <label htmlFor='country-list'>Countries of Origin</label>
-        <select id='country-list' defaultValue={selected}>
+        <select
+          id='country-list'
+          value={selected}
+          onChange={(e) => updateSelect(e.target.value)}
+        >
           {renderCountries()}
         </select>
       </div>
