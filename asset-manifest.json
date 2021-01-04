@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/wine-review/static/css/main.5c6aac1f.chunk.css",
-    "main.js": "/wine-review/static/js/main.c91676bb.chunk.js",
-    "main.js.map": "/wine-review/static/js/main.c91676bb.chunk.js.map",
+    "main.css": "/wine-review/static/css/main.87da3d23.chunk.css",
+    "main.js": "/wine-review/static/js/main.5f4a91e7.chunk.js",
+    "main.js.map": "/wine-review/static/js/main.5f4a91e7.chunk.js.map",
     "runtime-main.js": "/wine-review/static/js/runtime-main.ef37bd3f.js",
     "runtime-main.js.map": "/wine-review/static/js/runtime-main.ef37bd3f.js.map",
-    "static/js/2.71c3c2e3.chunk.js": "/wine-review/static/js/2.71c3c2e3.chunk.js",
-    "static/js/2.71c3c2e3.chunk.js.map": "/wine-review/static/js/2.71c3c2e3.chunk.js.map",
+    "static/js/2.09d94604.chunk.js": "/wine-review/static/js/2.09d94604.chunk.js",
+    "static/js/2.09d94604.chunk.js.map": "/wine-review/static/js/2.09d94604.chunk.js.map",
     "index.html": "/wine-review/index.html",
-    "static/css/main.5c6aac1f.chunk.css.map": "/wine-review/static/css/main.5c6aac1f.chunk.css.map",
-    "static/js/2.71c3c2e3.chunk.js.LICENSE.txt": "/wine-review/static/js/2.71c3c2e3.chunk.js.LICENSE.txt"
+    "static/css/main.87da3d23.chunk.css.map": "/wine-review/static/css/main.87da3d23.chunk.css.map",
+    "static/js/2.09d94604.chunk.js.LICENSE.txt": "/wine-review/static/js/2.09d94604.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ef37bd3f.js",
-    "static/js/2.71c3c2e3.chunk.js",
-    "static/css/main.5c6aac1f.chunk.css",
-    "static/js/main.c91676bb.chunk.js"
+    "static/js/2.09d94604.chunk.js",
+    "static/css/main.87da3d23.chunk.css",
+    "static/js/main.5f4a91e7.chunk.js"
   ]
 }
