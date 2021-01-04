@@ -5,7 +5,10 @@ import Header from './components/Header';
 import ReviewSelect from './components/ReviewSelect';
 import ReviewTable from './components/ReviewTable';
 
-const data = require('./reviews.json');
+const previousReviews = JSON.parse(
+  window.localStorage.getItem('previousReviews'),
+);
+const data = previousReviews ? previousReviews : require('./reviews.json');
 
 // helper function
 function onlyUnique(value, index, self) {

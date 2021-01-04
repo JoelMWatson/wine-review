@@ -21,7 +21,10 @@ const ReviewForm = ({ reviews, addReview }) => {
       price,
       tasterName,
     });
+
     addReview(newReviews);
+    console.log(newReviews);
+    window.localStorage.setItem('previousReviews', JSON.stringify(newReviews));
 
     setCountry('');
     setTitle('');
