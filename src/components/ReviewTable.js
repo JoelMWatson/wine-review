@@ -61,7 +61,7 @@ const ReviewTable = ({ reviews }) => {
             </th>
           </tr>
         </thead>
-        <tbody>{renderReviews()}</tbody>
+        <tbody className='table-body'>{renderReviews()}</tbody>
       </table>
     </div>
   );

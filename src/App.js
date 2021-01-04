@@ -5,7 +5,7 @@ import Header from './components/Header';
 import ReviewSelect from './components/ReviewSelect';
 import ReviewTable from './components/ReviewTable';
 
-const reviews = require('./reviews.json');
+const data = require('./reviews.json');
 
 // helper function
 function onlyUnique(value, index, self) {
@@ -13,6 +13,7 @@ function onlyUnique(value, index, self) {
 }
 
 function App() {
+  const [reviews, setReviews] = useState(data);
   const [country, setCountry] = useState(reviews[0].country);
 
   let countryReviews = reviews.filter((review) => {
@@ -29,7 +30,7 @@ function App() {
 
   return (
     <div className='App'>
-      <Header />
+      <Header reviews={reviews} addReview={setReviews} />
       <ReviewSelect
         numReviews={countryReviews.length}
         countries={countries}
